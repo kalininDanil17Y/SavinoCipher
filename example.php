@@ -1,10 +1,8 @@
-# SavinoCipher
+<?php
 
-Encryption of data into a token by key, with the possibility of decryption
+require './vendor/autoload.php';
 
-### Usage example
-
-```php
+use Danilo9\SavinoCipher;
 
 $server_secret_key = 'Secret key :)';
 $user = [
@@ -25,18 +23,3 @@ try {
 } catch (Exception $e) {
 	echo sprintf('Error: %s', $e->getMessage()) . PHP_EOL;
 }
-```
-
-### Code output
-
-```plaintext
-User token: 7pCn7lQfp1BRhjdB1Zfiy19HeUg5TTdEc1BkQ3g3NjF0cEtmdW5IbFpEbGVZQitXeU04VTRUTmtsdnZmdlZMN1pjTSt1MGxGS056WUgxTEExeHhaRWdmbS9wK0d6Y3FQbFZ3UGNsdz09
-Decrypt data:
-Array
-(
-    [id] => 332
-    [access_rights] => 4443
-    [note] => Test user data
-)
-
-```

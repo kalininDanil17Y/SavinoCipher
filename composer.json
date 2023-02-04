@@ -1,0 +1,17 @@
+{
+    "name": "danilo9/savino-cipher",
+    "description": "Encryption of data into a token by key, with the possibility of decryption",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Danilo9\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danil",
+            "email": "my@ro2005.ru"
+        }
+    ],
+    "require": {}
+}
